@@ -11,7 +11,7 @@ class XquareCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/team-xquare/xquare-cli/releases/download/v0.3.1/xquare_0.3.1_darwin_amd64.tar.gz"
-      sha256 "5927939693bb4df423aa6f3e159bc96b9af214971e8d89b64cc999236033b51d"
+      sha256 "27c493d21dba0fbee34c4560a9010621a47d3f46b2ba2c70647a9690612772e5"
 
       define_method(:install) do
         bin.install "xquare"
@@ -19,7 +19,7 @@ class XquareCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/team-xquare/xquare-cli/releases/download/v0.3.1/xquare_0.3.1_darwin_arm64.tar.gz"
-      sha256 "d6493c680957ea2e4b87436578125c5f459d781a9d3777ddf73ecb276581d227"
+      sha256 "6622fdca3157954f360d313e8b199860c63c3cd606cda6b9b782a83749cea054"
 
       define_method(:install) do
         bin.install "xquare"
@@ -30,14 +30,14 @@ class XquareCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/team-xquare/xquare-cli/releases/download/v0.3.1/xquare_0.3.1_linux_amd64.tar.gz"
-      sha256 "417c8ab8f96fdb77ec237ead41f7984332c3153f2db9bc7a028ee24de4efc4f2"
+      sha256 "effccc0cd26651a45f336addfd82efa45570b24cbf6d1f20d0a405345d8156ca"
       define_method(:install) do
         bin.install "xquare"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/team-xquare/xquare-cli/releases/download/v0.3.1/xquare_0.3.1_linux_arm64.tar.gz"
-      sha256 "90135d29a3116b46fee0ca6c51f1a0dfafdd8a8a6e39d126c0de86b24cefd070"
+      sha256 "af0a67c7009de7f6e693030e2df39eabbd7705c1e3295fcae7b20855da185c2b"
       define_method(:install) do
         bin.install "xquare"
       end

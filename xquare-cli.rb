@@ -5,21 +5,21 @@
 class XquareCli < Formula
   desc "PaaS CLI for DSM student teams"
   homepage "https://github.com/team-xquare/xquare-cli"
-  version "0.4.94"
+  version "0.4.95"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/team-xquare/xquare-cli/releases/download/v0.4.94/xquare_0.4.94_darwin_amd64.tar.gz"
-      sha256 "9e96b4a4dda282ecea0045ac254d3f16e36d1807697566d32b4c77ef275068af"
+      url "https://github.com/team-xquare/xquare-cli/releases/download/v0.4.95/xquare_0.4.95_darwin_amd64.tar.gz"
+      sha256 "006fec47dd0f04b3df664a9215df33a03bda2501ab8052a3cb3a4ae19131c8d0"
 
       define_method(:install) do
         bin.install "xquare"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/team-xquare/xquare-cli/releases/download/v0.4.94/xquare_0.4.94_darwin_arm64.tar.gz"
-      sha256 "9be63ba0e22156c9a9e9b79f42d15c87d3aae4cc0770f54d6d4af6028190070a"
+      url "https://github.com/team-xquare/xquare-cli/releases/download/v0.4.95/xquare_0.4.95_darwin_arm64.tar.gz"
+      sha256 "008fe29dd9f70d1eca005ddc7c82c747dfc1383134ba74622ed11f85a27fe22c"
 
       define_method(:install) do
         bin.install "xquare"
@@ -29,15 +29,15 @@ class XquareCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/team-xquare/xquare-cli/releases/download/v0.4.94/xquare_0.4.94_linux_amd64.tar.gz"
-      sha256 "3d43f08febc036664d668646739d0be0ccfcfb1760849b35ed9d0cb3c05df99d"
+      url "https://github.com/team-xquare/xquare-cli/releases/download/v0.4.95/xquare_0.4.95_linux_amd64.tar.gz"
+      sha256 "185844aef7fb4e4ed7a2bd4f3ee2d4887014171d96fe58086a8feaee4c8cfe7e"
       define_method(:install) do
         bin.install "xquare"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/team-xquare/xquare-cli/releases/download/v0.4.94/xquare_0.4.94_linux_arm64.tar.gz"
-      sha256 "42557e72a7a15bcf3b291fc52292fb09a4d0509be50c171643bfe29263621ce2"
+      url "https://github.com/team-xquare/xquare-cli/releases/download/v0.4.95/xquare_0.4.95_linux_arm64.tar.gz"
+      sha256 "860030d6b87037d297b02464ae72d1266ee493e259b26e1bcfa373676be8461c"
       define_method(:install) do
         bin.install "xquare"
       end
